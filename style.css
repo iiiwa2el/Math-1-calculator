@@ -30,3 +30,10 @@ body{color:#f0f1f7}
 .banner-star{color:#202638}
 .footer-brand{color:#f0f1f7}
 .hero h1.english-heading{text-align:right}
+.lecture-pills{display:flex;flex-wrap:wrap;gap:9px;margin:-8px 0 22px}
+.lecture-pills a{border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:#b7bbc7;font-size:11px;transition:background .2s,border-color .2s,color .2s}
+.lecture-pills a:hover{background:#292443;border-color:#514781;color:#d0c8ff}
+.formula-input{direction:ltr;text-align:left;font-family:'DM Mono',monospace!important}
+.result{white-space:pre-line;align-items:flex-start;overflow-wrap:anywhere}
+.tool-card{scroll-margin-top:95px}
+@media(max-width:800px){.lecture-pills{gap:7px}.lecture-pills a{font-size:10px;padding:7px 10px}}
