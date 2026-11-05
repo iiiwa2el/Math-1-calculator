@@ -37,3 +37,16 @@ body{color:#f0f1f7}
 .result{white-space:pre-line;align-items:flex-start;overflow-wrap:anywhere}
 .tool-card{scroll-margin-top:95px}
 @media(max-width:800px){.lecture-pills{gap:7px}.lecture-pills a{font-size:10px;padding:7px 10px}}
+.reference{padding:20px 0 75px;border-top:1px solid var(--line)}
+.reference-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.reference-card{background:#171c29;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.reference-card summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:17px 19px;font-size:14px;font-weight:600}
+.reference-card summary::-webkit-details-marker{display:none}
+.reference-card summary b{font:10px 'DM Mono',monospace;color:var(--purple);border:1px solid var(--line);border-radius:5px;padding:5px 7px}
+.reference-card summary::after{content:'+';color:var(--purple);font:20px 'DM Mono',monospace;margin-right:10px}
+.reference-card[open] summary::after{content:'−'}
+.reference-content{border-top:1px solid var(--line);padding:10px 19px 15px;color:#b1b5c1;font-size:12px;line-height:1.9}
+.reference-content p{margin:7px 0}
+.reference-content .math-line{direction:ltr;text-align:left;color:#d3ceff;font:12px 'DM Mono',monospace;background:#101522;border-radius:5px;padding:6px 9px;overflow-wrap:anywhere}
+.reference{scroll-margin-top:90px}
+@media(max-width:800px){.reference-grid{grid-template-columns:1fr}.reference{padding-top:38px}.topbar nav{gap:10px}}
